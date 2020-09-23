@@ -2,9 +2,6 @@
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
-" Show relative line numbers
-:set number relativenumber
-
 " Don't break words when wrapping
 :set linebreak
 
