@@ -1,8 +1,7 @@
 " TODO: Clean up comments & organization
-"
-" Map leader key to space
-nnoremap <SPACE> <Nop>
-let mapleader = " "
+
+" Map Space to leader key
+:map <SPACE> \
 
 " Don't break words when wrapping
 :set linebreak
