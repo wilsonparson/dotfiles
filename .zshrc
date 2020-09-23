@@ -116,6 +116,18 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # Use Neovim as default editor
 export EDITOR='nvim'
-
 alias vim='nvim'
-alias v='nvim'
+alias n='nvim'
+
+# ---------------------------------------------------
+# Git aliases
+# ---------------------------------------------------
+
+alias gl='git lg'
+alias gc='git commit'
+alias gs='git status'
+alias gd='git diff'
+alias gp='git push'
+alias ga='git add'
+alias gaa='git add -A'
+
