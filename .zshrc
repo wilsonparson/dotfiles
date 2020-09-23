@@ -125,9 +125,12 @@ alias n='nvim'
 
 alias gl='git lg'
 alias gc='git commit'
+alias gcm='git commit -m'
 alias gs='git status'
 alias gd='git diff'
-alias gp='git push'
+alias gds='git diff --staged'
+alias gps='git push'
+alias gpl='git pull'
 alias ga='git add'
 alias gaa='git add -A'
 
