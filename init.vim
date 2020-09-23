@@ -1,8 +1,3 @@
-" Vim Stuff
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath = &runtimepath
-source ~/.vimrc
-
 " Map leader key to space
 nnoremap <SPACE> <Nop>
 let mapleader = " "
