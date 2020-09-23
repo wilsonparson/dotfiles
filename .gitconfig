@@ -1,0 +1,5 @@
+[alias]
+	lg = log --oneline --decorate --graph
+[user]
+	name = Wilson Parson
+	email = wilson.parson@gmail.com
