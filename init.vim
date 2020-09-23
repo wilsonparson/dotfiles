@@ -1,3 +1,5 @@
+" TODO: Clean up comments & organization
+"
 " Map leader key to space
 nnoremap <SPACE> <Nop>
 let mapleader = " "
