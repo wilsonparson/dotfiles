@@ -43,7 +43,12 @@ Plug 'junegunn/fzf.vim'
 
 " NERDTree
 Plug 'preservim/nerdtree'
+
+" Use similar toggle key to VS Code
 map <leader>b :NERDTreeToggle<CR>
+
+" Show hidden files
+let g:NERDTreeShowHidden=1
 
 " ---
   
