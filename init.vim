@@ -6,6 +6,8 @@
 " Don't break words when wrapping
 :set linebreak
 
+:set number
+
 " PLUGINS
 call plug#begin(stdpath('data') . '/plugged')
   " FILE NAVIGATION
