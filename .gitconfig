@@ -1,10 +1,3 @@
-[alias]
-	lg = log --oneline --decorate --graph
-	s = status
-	d = diff
-	sh = show
-	c = commit
-	unstage = reset HEAD --
 [user]
 	name = Wilson Parson
 	email = wilson.parson@gmail.com
