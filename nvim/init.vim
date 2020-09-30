@@ -42,16 +42,9 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': [
-  \   'javascript', 'typescript', 'css', 'scss', 'json',
-  \   'markdown', 'yaml', 'html'
-  \ ]
-\ }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
-Plug 'overcache/NeoSolarized'
+Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -62,7 +55,7 @@ call plug#end()
 " ------------------------------------------
 
 set background=dark
-colorscheme NeoSolarized
+colorscheme gruvbox
 
 " ------------------------------------------
 " Plugin Settings
@@ -70,11 +63,10 @@ colorscheme NeoSolarized
 
 let g:netrw_liststyle = 3
 
-let g:prettier#autoformat = 1   " Format on Save
-let g:prettier#autoformat_require_pragma = 0
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme='solarized'
+let g:airline_theme='gruvbox'
 
 autocmd FileType markdown let b:coc_suggest_disable = 1
 
