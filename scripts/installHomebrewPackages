@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# TODO: Check if Homebrew is installed; if not, install it.
+# TODO: Initialize array of brew & brew cask packages I want
+# TODO: Iterate over arrays and install them
+
+

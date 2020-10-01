@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Clones iTerm2 color schemes repo and places it in root of project
+
+# Change working directory to parent directory of this script
+cd "$(dirname "$0")"
+
+# Check if cloned repo exists
+if [ -d "../iTerm2-Color-Schemes" ]
+then
+  echo "iTerm2-Color-Schemes already exists."
+else
+  git clone https://github.com/mbadolato/iTerm2-Color-Schemes ../
+fi
