@@ -115,7 +115,8 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Use Neovim as default editor
-export EDITOR='nvim'
+export EDITOR=nvim
+export VISUAL=nvim
 alias vim='nvim'
 alias n='nvim'
 

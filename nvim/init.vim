@@ -48,6 +48,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim' " required for ranger.vim
 
 call plug#end()
 
@@ -63,6 +65,10 @@ colorscheme gruvbox
 " ------------------------------------------
 
 let g:netrw_liststyle = 3
+let g:netrw_preview = 1
+let g:netrw_alto = 0
+
+let g:ranger_map_keys = 0
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
@@ -78,10 +84,10 @@ autocmd FileType markdown let b:coc_suggest_disable = 1
 let mapleader = ' '
 nnoremap <leader><CR> :source $MYVIMRC<CR>
 nnoremap <leader>e :edit $MYVIMRC<CR>
-nnoremap <silent> <leader>p :GFiles<CR>
-nnoremap <silent> <leader>P :Files<CR>
-nnoremap <silent> <leader>f :Ag
-nnoremap <leader>g :Git 
+nnoremap <leader>r :Ranger<CR>
+nnoremap <leader>p :GFiles<CR>
+nnoremap <leader>P :Files<CR>
+nnoremap <leader>a :Ag 
 nnoremap <silent> gd <Plug>(coc-definition)
 nnoremap <silent> gy <Plug>(coc-type-definition)
 nnoremap <silent> gi <Plug>(coc-implementation)
