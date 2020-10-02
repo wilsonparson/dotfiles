@@ -20,7 +20,6 @@ set scrolloff=8
 set completeopt=menuone
 set nowrap
 set splitright
-set splitbelow
 autocmd BufRead,BufNewFile *.md setlocal wrap linebreak
 set cmdheight=2
 set updatetime=50
@@ -41,6 +40,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -91,8 +92,6 @@ nnoremap <leader>r :Ranger<CR>
 nnoremap <leader>p :GFiles<CR>
 nnoremap <leader>P :Files<CR>
 nnoremap <leader>f :Ag 
-nnoremap <leader>b :bnext<CR>
-nnoremap <leader>B :bprev<CR>
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2
 nmap <leader>3 <Plug>AirlineSelectTab3
@@ -104,11 +103,16 @@ nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 nmap <leader>B <Plug>AirlineSelectPrevTab
 nmap <leader>b <Plug>AirlineSelectNextTab
+map <leader>d :bd<CR>
 map gd <Plug>(coc-definition)
 map gy <Plug>(coc-type-definition)
 map gi <Plug>(coc-implementation)
 map gr <Plug>(coc-references)
 map K :call CocActionAsync('doHover')<CR>
+nmap <leader>gs :20Gstatus<CR>
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gu :diffget //2<CR>
+tnoremap <Esc> <C-\><C-n>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
